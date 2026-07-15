@@ -83,24 +83,20 @@ form?.addEventListener('submit',async e=>{
       form.reset();
       status.textContent='Thanks! Your message has been sent successfully.';
       status.style.color='#34D399';
-      window.location.href='thank-you.html';
     }else{
       throw new Error('Submission failed');
     }
   }catch(error){
-    status.textContent='Sorry, something went wrong. Please email me directly at mercado.abegail@gmail.com.';
+    status.textContent='Sorry, something went wrong. Please email me directly at abex.virtualsupport@gmail.com.';
     status.style.color='#F87171';
   }finally{
     btn.disabled=false;
     btn.textContent='Send Message →';
   }
 });
-window.onbeforeprint = () => {
 
-document.querySelectorAll(".reveal").forEach(item=>{
-
-item.classList.add("visible");
-
+window.addEventListener('beforeprint', () => {
+  document.querySelectorAll(".reveal").forEach(item => {
+    item.classList.add("visible");
+  });
 });
-
-};
