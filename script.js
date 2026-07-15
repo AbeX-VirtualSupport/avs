@@ -94,9 +94,3 @@ form?.addEventListener('submit',async e=>{
     btn.textContent='Send Message →';
   }
 });
-
-window.addEventListener('beforeprint', () => {
-  document.querySelectorAll(".reveal").forEach(item => {
-    item.classList.add("visible");
-  });
-});
