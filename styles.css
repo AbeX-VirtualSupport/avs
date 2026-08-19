@@ -54,7 +54,39 @@ footer{border-top:1px solid var(--line);padding:28px 0}.footer-content{display:f
 .clink .ico{font-size:20px;width:32px;text-align:center;color:var(--gold-light);}
 .clink .lbl{font-size:11px;color:rgba(255,255,255,.6);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.04em;}
 .clink .val{font-size:13.5px;font-weight:600;color:#fff;margin-top:2px;}
-.social-strip{display:flex;gap:12px;margin-top:28px;}
+.social-strip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+.social-strip a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FFFDFC; /* Warm Ivory */
+  border: 1px solid rgba(184, 111, 82, 0.25); /* Subtle Burnished Copper border */
+  color: #321B3A; /* Deep Aubergine */
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
+}
+.social-strip a svg {
+  display: block;
+  transition: transform 0.2s ease;
+}
+.social-strip a:hover {
+  background-color: #B86F52; /* Burnished Copper */
+  color: #FFFDFC; /* Warm Ivory icon */
+  border-color: #B86F52;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(50, 27, 58, 0.12);
+}
+.social-strip a:hover svg {
+  transform: scale(1.05);
+}
 .social-btn{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.75);font-size:13px;font-weight:700;transition:all .25s;font-family:'DM Sans',sans-serif;background:rgba(255,255,255,.04);}
 .social-btn:hover{background:var(--gold);border-color:var(--gold);color:var(--teal-950);transform:translateY(-2px);}
 .contact-form{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:30px;box-shadow:0 18px 50px rgba(0,0,0,.16);backdrop-filter:blur(8px);}
